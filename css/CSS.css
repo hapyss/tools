@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{height: 100%;font-size:62.5%;}
+body {margin:0 auto;padding:0;height: 100%;}
+body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
+h1, h2, h3, h4, h5, h6 { font-weight: normal}
+ul { margin:0; padding:0; list-style:none }
+li {margin:0; padding:0;}
+a {color:#000}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+img { border:0;}
+dl{margin:0; padding:0}
+dl dd{margin:0}
+.float_left{float:left}
+.float_right{float:right}
+.clear{clear:both; line-height:0; padding:0; margin:0}
+
+html{font-size:62.5%;}
+body {-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;-webkit-text-size-adjust:none;margin:0 auto;padding:0;}
+body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
+h1, h2, h3, h4, h5, h6 { font-weight: normal}
+ul { margin:0; padding:0; list-style:none }
+li {margin:0; padding:0;}
+a {color:#000}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+img { border:0;}
+dl{margin:0; padding:0}
+dl dd{margin:0}
+.float_left{float:left}
+.float_right{float:right}
+.clear{clear:both; line-height:0; padding:0; margin:0}
