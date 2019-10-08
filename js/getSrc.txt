@@ -1,7 +1,11 @@
-获取页面的所有src文件，避免附件存放过多无用文件。
+﻿获取页面的所有src文件，避免附件存放过多无用文件。
 1、在源代码里正则搜索src地址。
 str=document.body.innerHTML
 reg = /<img \b[\d\D][^$>]{0,}/gmi
 str.match(reg).toString()
-2、对地址整理规范后，在cmd命令里执行复制命令
+
+2、匹配引号到末尾的换行符：
+"[\D\d]{1,}?[\n]
+
+3、对地址整理规范后，在windows系统里cmd命令里执行复制命令
 copy 141409\141409\logodan.jpg 401871\401871
