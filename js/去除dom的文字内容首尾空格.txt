@@ -1,0 +1,14 @@
+(function(){
+	var str = $(".index-mz-intro p").text();
+	str = str.replace(/^\s*|\s*$/g,"");
+	$(".index-mz-intro p").text(str);
+	$(".index-mz-intro p").css("text-indent","30px")
+})();
+							
+去除字符串内所有的空格：str = str.replace(/\s*/g,"");
+
+去除字符串内两头的空格：str = str.replace(/^\s*|\s*$/g,"");
+
+去除字符串内左侧的空格：str = str.replace(/^\s*/,"");
+
+去除字符串内右侧的空格：str = str.replace(/(\s*$)/g,"");
