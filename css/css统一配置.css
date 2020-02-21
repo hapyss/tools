@@ -1,13 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
 
-html,body{height:100%;width:100%;overflow: hidden;}
-body{font-family:"Microsoft YaHei",SimHei,Arial , Helvetica, Tahoma;font-size:62.5%;}
 body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
+html,body{height: 100%;}
 h1, h2, h3, h4, h5, h6 { font-weight: normal}
 ul { margin:0; padding:0; list-style:none }
 li {margin:0; padding:0;}
-a {color:#000}
+a {color:#000;}
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -30,14 +29,15 @@ dl dd{margin:0}
 /**
  * text-size-adjust
  * 设置为none，关闭竖屏切为横屏，自动调整字体大小
+ * [v-cloak]是防止vue大括号
  */
-html,body{height:100%;width:100%;overflow: hidden;}
-body {-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;-webkit-text-size-adjust:none;font-size:62.5%;}
+body {-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;-webkit-text-size-adjust:none; font-size:calc(100vw / 750 * 100)}
 body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
+html,body{height: 100%;}
 h1, h2, h3, h4, h5, h6 { font-weight: normal}
 ul { margin:0; padding:0; list-style:none }
 li {margin:0; padding:0;}
-a {color:#000}
+a {color:#000;}
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
 a:hover {text-decoration: underline;}
@@ -48,3 +48,4 @@ dl dd{margin:0}
 .float_left{float:left}
 .float_right{float:right}
 .clear{clear:both; line-height:0; padding:0; margin:0}
+[v-cloak]{display: none;}
