@@ -1,0 +1,7 @@
+<audio controls='' autoplay='' controlsList='nodownload'>
+	<source src='1.mp3' type='audio/mpeg'>
+	您的浏览器不支持 audio 元素。
+</audio>
+<video autoplay="" controls="yes">
+	<source src="1.mp4" type="video/mp4">
+</video>

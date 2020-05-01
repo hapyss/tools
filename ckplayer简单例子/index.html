@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="./data/js/ckplayer.js" charset="UTF-8"></script>
+	</head>
+	<body>
+		<div id="playerbox"></div>
+		<script>
+		function objplay(jpg,mp4){
+		    var videoObject = {
+		        container: '#playerbox', //容器的ID或className
+		        variable: 'player', //播放函数名称
+		        //loop: true, //播放结束是否循环播放
+		        autoplay: false,//是否自动播放
+		        poster: jpg, //封面图片
+		        //flashplayer:true,
+		        //live:true,
+		        //debug:true,
+		        video:[
+		            [mp4, 'video/mp4', '中文标清', 0]
+		        ]
+		    };
+		    var player = new ckplayer(videoObject);
+		    return player;
+		}
+		var playconsole = objplay("1.jpg","http://livecdn.cqnews.net//vod1/2701/202002/24/117988_1582540195351_(729.64_770.72)_bvs.mp4");
+		//playconsole.videoPause();暂停
+		</script>
+		
+		
+		
+	</body>
+</html>

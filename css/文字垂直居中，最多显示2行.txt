@@ -1,0 +1,20 @@
+<style>
+.box{display: table; height:100px; width:200px; border:1px solid #333}
+.box div{display: table-cell; vertical-align: middle;}
+.box2{display: table; height:100px; width:200px; border:1px solid #333}
+.box2 div.cell{display: table-cell; vertical-align: middle;}
+.box2 div.cell div{font-size:16px; font-weight:normal;display: block;
+display:-webkit-box;  
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2; 
+overflow:hidden; 
+text-overflow:ellipsis;}
+</style>
+<div class="box">
+	<div>文字居中</div>
+</div>
+<div class="box2">
+	<div class="cell">
+    	<div>文字最多显示2行，并且不管一行还是两行居中，第三行开始隐藏<div>
+    </div>
+</div>

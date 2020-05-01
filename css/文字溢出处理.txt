@@ -1,0 +1,28 @@
+单行文字：
+{overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+多行文字（注意不要写高度）：
+display: block;
+display:-webkit-box;  
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2; 
+overflow:hidden; 
+text-overflow:ellipsis;
+		
+伪类添加更多
+p {
+	position:relative;
+	line-height:20px;
+	max-height:40px;
+	overflow:hidden;
+}
+p::after {
+	content: "\02026";      // '...'
+	position:absolute;
+	bottom:0;
+	right:0;
+	padding-left:40px;
+	background:-webkit-linear-gradient(left,transparent,#fff 55%);
+	background:-o-linear-gradient(right,transparent,#fff 55%);
+	background:-moz-linear-gradient(right,transparent,#fff 55%);
+	background:linear-gradient(to right,transparent,#fff 55%);
+}

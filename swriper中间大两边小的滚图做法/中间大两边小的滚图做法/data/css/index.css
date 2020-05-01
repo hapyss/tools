@@ -1,0 +1,128 @@
+body, h1, h2, h3, h4, h5, h6, form { margin: 0px; padding: 0px; }
+
+html, body { height: 100%; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+li { margin: 0; padding: 0; }
+
+a { color: #000; }
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+a:active { text-decoration: none; }
+
+img { border: 0; }
+
+dl { margin: 0; padding: 0; }
+
+dl dd { margin: 0; }
+
+.float_left { float: left; }
+
+.float_right { float: right; }
+
+.clear { clear: both; line-height: 0; padding: 0; margin: 0; }
+
+.bg { height: 214px; background: center no-repeat; }
+
+.bg1 { background-image: url(../images/20200217-qmfk_01.jpg); }
+
+.bg2 { background-image: url(../images/20200217-qmfk_02.jpg); }
+
+.bg3 { background-image: url(../images/20200217-qmfk_03.jpg); }
+
+.w1000 { width: 1000px; }
+
+.mainbox { width: 1000px; position: relative; overflow: hidden; margin: 0 auto; }
+
+.tit { width: 1000px; display: block; margin: 0 auto; padding: 40px 0; }
+
+.shoupinbox { width: 1028px; padding: 45px 0; }
+.shoupinbox .device1 { width: 588px; height: 400px; position: relative; padding: 25px 29px; float: left; background: url(../images/20200217-qmfk_04.jpg) center no-repeat; }
+.shoupinbox .device1 .swiper-container { height: 400px; }
+.shoupinbox .device1 .swiper-container .swiper-wrapper { position: relative; }
+.shoupinbox .device1 .swiper-container .swiper-wrapper .swiper-slide { position: relative; }
+.shoupinbox .device1 .swiper-container .swiper-wrapper .swiper-slide h1 { font-size: 18px; line-height: 50px; height: 50px; overflow: hidden; position: absolute; bottom: 0; left: 0; z-index: 999; color: #fff; background: rgba(0, 0, 0, 0.7); width: 570px; padding-left: 18px; }
+.shoupinbox .device1 .swiper-container .swiper-wrapper .swiper-slide h1 a { color: #fff; }
+.shoupinbox .device1 .pagination { position: absolute; z-index: 20; bottom: 37px; right: 36px; text-align: center; }
+.shoupinbox .device1 .pagination .swiper-pagination-switch { display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #fff; margin: 0 5px; opacity: 0.8; cursor: pointer; }
+.shoupinbox .device1 .pagination .swiper-active-switch { background: #00a0ba; }
+.shoupinbox .shoupinyou { width: 352px; float: right; }
+.shoupinbox .shoupinyou h1 { font-size: 22px; line-height: 50px; padding-top: 15px; height: 50px; overflow: hidden; }
+.shoupinbox .shoupinyou h2, .shoupinbox .shoupinyou ul { font-size: 14px; font-family: SimSun; line-height: 36px; }
+.shoupinbox .shoupinyou h2 { background: url(../images/20200217-qmfk_11.jpg) center bottom repeat-x; padding-bottom: 20px; }
+.shoupinbox .shoupinyou ul { padding: 20px 0 15px; }
+.shoupinbox .shoupinyou ul li { height: 36px; overflow: hidden; }
+
+.wangluoyanyi { width: 100%; height: 619px; overflow: hidden; background: url(../images/20200217-qmfk_05.jpg) center top no-repeat; }
+.wangluoyanyi .mainbox { width: 950px; padding: 140px 25px 0; }
+.wangluoyanyi .shipin { width: 665px; height: 412px; float: left; border: 12px solid #fff; border-radius: 10px; }
+.wangluoyanyi .shipintext { width: 200px; height: 340px; padding: 0 14px; background: #da5737; float: right; margin-top: 40px; border-radius: 10px; }
+.wangluoyanyi .shipintext h1 { font-size: 20px; color: #fff; border-bottom: 3px solid #fff; padding: 12px 0; }
+.wangluoyanyi .shipintext h1 a { color: #fff; }
+.wangluoyanyi .shipintext h2 { font-size: 14px; line-height: 34px; color: #fff; font-family: SimSun; text-indent: 30px; padding-top: 12px; }
+.wangluoyanyi .shipintext h2 a { color: #fff; }
+
+.dakazhuwei { width: 997px; height: 570px; padding-top: 65px; margin: 0 auto; margin-bottom: 45px; position: relative; background: url(../images/20200217-qmfk_8.jpg) center no-repeat; }
+.dakazhuwei .arrow-left, .dakazhuwei .arrow-right { width: 59px; height: 70px; background: url(../images/jiantou.jpg) left top no-repeat; position: absolute; top: 300px; cursor: pointer; }
+.dakazhuwei .arrow-left { left: -100px; }
+.dakazhuwei .arrow-right { right: -100px; background-position: -59px; }
+.dakazhuwei .swiper-container2 { width: 886px; height: 508px; margin: 0 auto; overflow: hidden; text-align: center; }
+.dakazhuwei .swiper-container2 .swiper-wrapper .swiper-slide .title { font-style: italic; font-size: 42px; margin-top: 80px; margin-bottom: 0; line-height: 45px; }
+
+.wenyijilan { width: 100%; height: 673px; overflow: hidden; background: url(../images/20200217-qmfk_9.jpg) center top no-repeat; }
+.wenyijilan .wyjlbox { width: 1000px; margin: 0 auto; overflow: hidden; padding-top: 130px; }
+.wenyijilan .wyjlbox ul.wyjlcol { float: left; }
+.wenyijilan .wyjlbox ul.wyjlcol li { width: 127px; padding: 12px 0 0 20px; cursor: pointer; }
+.wenyijilan .wyjlbox ul.wyjlcol li img { display: block; }
+.wenyijilan .wyjlbox ul.wyjlnr { width: 790px; float: right; padding-top: 30px; }
+.wenyijilan .wyjlbox ul.wyjlnr div.inline { width: 110%; overflow: hidden; }
+.wenyijilan .wyjlbox ul.wyjlnr div.inline li { float: left; width: 246px; padding: 0 26px 0 0; }
+.wenyijilan .wyjlbox ul.wyjlnr div.inline li img { width: 246px; height: 162px; display: block; }
+.wenyijilan .wyjlbox ul.wyjlnr div.inline li h1 { font-size: 14px; height: 40px; line-height: 40px; text-align: center; }
+.wenyijilan .wyjlbox ul.wyjlnr div.inline li h1 a { color: #fff; }
+.wenyijilan .wyjlbox ul.wyjlnr a.more { color: #fff; border: 1px solid #fff; float: right; padding: 5px 12px; border-radius: 18px; margin-top: 24px; }
+
+.TujiBox { width: 1000px; height: 630px; position: relative; margin: 0 auto; background: #f8f8f8; }
+.TujiBox #pic_list li { display: none; text-align: center; font-size: 14px; position: absolute; height: 630px; }
+.TujiBox #pic_list li img { display: block; border: none; }
+.TujiBox #pic_list li div { z-index: 1; position: absolute; display: block; width: 960px; line-height: 30px; bottom: 0; left: 0; color: #fff; height: 70px; text-align: left; padding: 10px 20px; }
+.TujiBox #pic_list li div h3 { text-align: center; font-size: 24px; font-weight: normal; padding-top: 22px; }
+.TujiBox #pic_list li div p { text-align: center; }
+.TujiBox #pic_list li div a { color: #333; text-decoration: none; }
+.TujiBox #pic_list li.active { display: block; }
+.TujiBox #num_list { z-index: 2; clear: both; height: 100px; overflow: hidden; position: absolute; top: 465px; left: 20%; width: 570px; padding: 0 10px; }
+.TujiBox #num_list .lhTujiSmall { height: 58px; overflow: hidden; margin-left: 10px; }
+.TujiBox #num_list .lhTujiSmall ul { position: relative; left: 0; top: 0; width: auto; }
+.TujiBox #num_list .lhTujiSmall ul li { width: 110px; height: 60px; padding: 0; text-align: center; overflow: hidden; float: left; margin: 0 5px; }
+.TujiBox #num_list .lhTujiSmall ul li i { display: none; }
+.TujiBox #num_list .lhTujiSmall ul li img { width: 100px; height: 50px; border: #ffeec8 5px solid; }
+.TujiBox #num_list .lhTujiSmall ul li.active img { border: #d62434 5px solid; width: 100px; height: 50px; }
+.TujiBox .up { text-align: center; cursor: pointer; position: absolute; bottom: 15px; left: 25px; z-index: 10; }
+.TujiBox .down { text-align: center; cursor: pointer; position: absolute; bottom: 15px; right: 25px; z-index: 10; }
+
+.morelink { color: #cf3a43; border: 1px solid #cf3a43; float: right; border-radius: 16px; }
+
+.zhanyixinsheng { width: 100%; height: 756px; overflow: hidden; background: url(../images/20200217-qmfk_10.jpg) center top no-repeat; }
+.zhanyixinsheng .mainbox { width: 1200px; height: 500px; padding-top: 150px; }
+.zhanyixinsheng .swiper-container3 { width: 1266px; margin: 0 auto; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper { height: auto !important; padding-top: 40px; position: relative; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide { position: relative; transition: transform 1.0s; height: auto !important; transform: scale(0.8); }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide i { display: block; position: absolute; left: 0; top: 0; width: 633px; height: 396px; background: #000; opacity: 0.7; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide h1, .zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide h2 { display: block; position: absolute; left: 0; bottom: 0; height: 40px; width: 100%; line-height: 40px; overflow: hidden; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide h1 { color: #fff; z-index: 2; font-size: 14px; font-family: SimSun; padding-left: 12px; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide h2 { background: #000; z-index: 1; opacity: 0.7; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide img { display: block; width: 633px; height: 396px; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide.swiper-slide-active { transform: scale(1.2); z-index: 1002; }
+.zhanyixinsheng .swiper-container3 .swiper-wrapper .swiper-slide.swiper-slide-active i { display: none; }
+.zhanyixinsheng .zyxslink { width: 1000px; margin: 0 auto; }
+.zhanyixinsheng .zyxslink a.more { color: #fff; border: 1px solid #fff; float: right; padding: 4px 12px; border-radius: 16px; }
+
+/*# sourceMappingURL=index.css.map */
