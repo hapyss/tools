@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="assets/html2canvas.js" ></script>
+	</head>
+	<body>
+		<div id="box">
+			<img src="assets/1.png" /><br />
+			111111
+		</div>
+		<script>
+			html2canvas(document.getElementById("box"), {
+			  onrendered: function(canvas) {
+			    var url = canvas.toDataURL();//图片地址
+			    window.console.log(canvas)
+			    window.console.log(canvas.toDataURL())
+			    document.body.appendChild(canvas);
+			  },
+			  allowTaint: true,
+			  useCORS: true
+			});
+			
+			/*html2canvas(document.body, {
+			    allowTaint: false,
+			    useCORS: true,
+			    //height: targetDom.scrollHeight,
+			    //width: targetDom.scrollWidth
+			}).then(canvas => {
+			// canvas
+				window.console.log(canvas.toDataURL())
+			});*/
+			
+			
+		</script>
+	</body>
+</html>

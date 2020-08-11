@@ -1,0 +1,7 @@
+var QRCode = require('qrcode')
+QRCode.toDataURL('http://www.cqnews.net', function (err, url) {
+  window.console.log(url)
+})
+QRCode.toString('I am a pony!',{type:'terminal'}, function (err, url) {
+  window.console.log(url)
+})

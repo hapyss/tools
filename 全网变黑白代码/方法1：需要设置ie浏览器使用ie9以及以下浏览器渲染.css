@@ -1,0 +1,33 @@
+<!--[if IE 7]>
+<style type="text/css">
+
+* {
+	zoom: 1
+}
+</style>
+<![endif]-->
+
+<style type="text/css">
+html {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	color:gray;
+}
+</style>
+
+<!--[if IE]>
+<style type="text/css">
+* {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	color:gray;
+}
+</style>
+<![endif]-->

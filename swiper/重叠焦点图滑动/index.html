@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>两边渐小的轮播图</title>
+		<link href="swiper.min.css" rel="stylesheet">
+		<style type="text/css">
+			#banner {
+				margin: 90px auto 0;
+				width: 1333px;
+				overflow: hidden;
+			}
+			#banner .swiper-slide {
+				width: 970px;
+				height: 580px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container" id="banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+				<div class="swiper-slide">
+					<img src="http://i.cqnews.net/car/2020-04/30/8c39b164-c61e-4bce-a355-a027ac81cd07.jpg">
+				</div>
+			</div>
+		</div>
+		<script src="http://www.cqnews.net/js/jquery.min.js"></script>
+		<script src="swiper.min.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				var mySwiper = new Swiper("#banner", {
+					loop: true,
+					loopedSlides: 5,
+					slidesPerView: 'auto',
+					autoplay: true,
+					centeredSlides: true,
+					initialSlide: 2,
+					watchSlidesProgress: true,
+					  autoplay: {
+					    delay: 1000,//1秒切换一次
+					  },
+					on: {
+						progress: function(progress) {
+							for(i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i);
+								var slideProgress = this.slides[i].progress;
+								if(Math.abs(slideProgress) > 1) {
+									var modify = (Math.abs(slideProgress) - 1) * 0.4 + 1;
+								}
+								translate = slideProgress * modify * 558 + 'px';
+								scale = 1 - Math.abs(slideProgress) / 5;
+								zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+								slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+								slide.css('zIndex', zIndex);
+								slide.css('opacity', 1);
+								if(Math.abs(slideProgress) > 3) {
+									slide.css('opacity', 0);
+								}
+							}
+						},
+						setTransition: function(transition) {
+							for(var i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i)
+								slide.transition(transition);
+							}
+
+						}
+					}
+				})
+			})
+		</script>
+	</body>
+
+</html>

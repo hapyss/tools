@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Tencent-TGideas">
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+<meta name="HandheldFriendly" content="true">
+<!-- 微软的老式浏览器 -->
+<meta name="MobileOptimized" content="320">
+<!-- uc强制竖屏 -->
+<meta name="screen-orientation" content="portrait">
+<!-- QQ强制竖屏 -->
+<meta name="x5-orientation" content="portrait">
+<!-- UC强制全屏 -->
+<meta name="full-screen" content="yes">
+<!-- QQ强制全屏 -->
+<meta name="x5-fullscreen" content="true">
+<!-- UC应用模式 -->
+<meta name="browsermode" content="application">
+<!-- QQ应用模式 -->
+<meta name="x5-page-mode" content="app">
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no">
+<!-- 适应移动端end -->
+<meta name="Description" content="">
+<meta name="Keywords" content="">
+<title>无标题文档</title>
+<script src="http://www.cqnews.net/js/jquery.min.js"></script>
+<style>
+body {-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;user-select:none;-webkit-text-size-adjust:none; font-size:calc(100vw / 750 * 100)}
+body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
+h1, h2, h3, h4, h5, h6 { font-weight: normal}
+ul { margin:0; padding:0; list-style:none }
+li {margin:0; padding:0;}
+a {color:inherit;}
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+img { border:0;}
+dl{margin:0; padding:0}
+dl dd{margin:0}
+.float_left{float:left}
+.float_right{float:right}
+.clear{clear:both; line-height:0; padding:0; margin:0}
+</style>
+<script src="http://www.cqnews.net/js/jquery.min.js"></script>
+</head>
+
+<body>
+<div style="width:300px; height:3000px; border:1px solid #666; font-size: 4vw;">
+	判断上滑动还是下滑动
+</div>
+<script>
+var before;
+$(window).on('touchstart', function() {
+    before = $(window).scrollTop();
+});
+	
+$(window).on('touchmove', function() {
+	var after = $(window).scrollTop();
+    if (before < after) {
+        console.log('下');
+        before = after;
+        //console.log(after);
+    }
+    if (before > after) {
+        console.log('上');
+        before = after;
+    }
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+${article.title?replace("<.*?>","","r")?replace("\r\n","<br>")?replace("\'","\"")}
+
+
+<FOUNDER-XY type="articlelist" data="{'columnid':[608858],'articletype':'all','article_attr':'all','titlePic':'none','start':'0','count':'10'}">
+<#list articles as article>
+{
+	title:'${article.title?replace("<.*?>","","r")?replace("\r\n","<br>")',
+	desc: '${article.summary?replace("<.*?>","","r")?replace("\r\n","<br>")',
+	href: '${article.urlPad}',
+	src: '${article.picMiddle}',
+	date: '${article.pubTime?string("yyyy-MM-dd")}'
+},
+</#list>
+</FOUNDER-XY>

@@ -3,7 +3,7 @@
 
 body, h1, h2, h3, h4, h5, h6,form{margin: 0px; padding:0px}
 html,body{height: 100%;}
-h1, h2, h3, h4, h5, h6 { font-weight: normal}
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size:100%}
 ul { margin:0; padding:0; list-style:none }
 li {margin:0; padding:0;}
 a {color:inherit;}
