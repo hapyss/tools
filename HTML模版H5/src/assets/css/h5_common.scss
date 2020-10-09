@@ -83,18 +83,4 @@ select {
 [v-cloak] {
     display: none;
 }
-@mixin font-overflow {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-@mixin font-overflow-more($index) {
-display: block;
-display: -webkit-box;
-/* autoprefixer: off */
--webkit-box-orient: vertical;
-/* autoprefixer: on */
--webkit-line-clamp: $index;
-overflow: hidden;
-text-overflow: ellipsis;
-}
+@import 'include'
