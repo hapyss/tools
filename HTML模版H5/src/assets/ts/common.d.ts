@@ -2,7 +2,7 @@ declare let jQuery: (selector?: string) => any;
 declare let $: (selector?: string) => any;
 
 declare interface AxiosRequestConfig {
-    get(arg: sting);
+    get(arg: string);
     then();
     catch();
 }
@@ -11,10 +11,10 @@ declare let axios:AxiosRequestConfig;
 interface VueArg{
     el: string;
     data: {
-        [propName: sting]: any
+        [propName: string]: any
     };
     methods: {
-        [propName: sting]: any
+        [propName: string]: any
     };
     mounted: ()=>any;
 };
